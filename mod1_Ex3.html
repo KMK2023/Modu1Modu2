@@ -1,0 +1,93 @@
+<!-- Using this code as a starter:
+- Add a ‘Change Me’ button under each heading
+- Style your buttons with CSS
+- Add a script tag with two JS
+functions, one for each button
+- Clicking each button should change the background colour and the heading text for that column.
+Extension: add text fields under the headings, and replace the heading text with the value of the text fields when the buttons are clicked! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1 Exercise 3</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        min-height: 50vh;
+        align-items: stretch;
+      }
+      .column {
+        background: goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      .row {
+        background: blue;
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="color: green; font-family: 'Arial', sans-serif; text-align: center"
+    >
+      Exercise 1 - Module 3
+    </h1>
+    <div class="container">
+      <div class="column" id="column1">
+        <h1 id="heading1">FirstBox</h1>
+        <input id="box1" type="box1" value="box1" />
+        <button onclick="box1change()">ClicktoChange</button>
+      </div>
+      <div class="column" id="column2">
+        <h1 id="heading2">SecondBox</h1>
+        <input id="box2" type="box2" value="box2" />
+        <button onclick="box2change()">ClickHeretoChange</button>"
+      </div>
+    </div>
+
+    <!-- adding another row -->
+    <div class="row" id="row">
+      <h1 id="heading3">ThirdBox</h1>
+      <input id="box3" type="box3" value="box3" />
+      <button onclick="box3change()">ClickHeretoObserve</button>"
+    </div>
+
+    <!-- Script for the above changes -->
+    <script>
+      function box1change() {
+        document.getElementById("column1").style.backgroundColor = "purple";
+        document.getElementById("heading1").innerText = "First";
+        document.getElementById("heading1").innerText =
+          document.getElementById("box1").value;
+      }
+
+      function box2change() {
+        document.getElementById("column2").style.backgroundColor = "grey";
+        document.getElementById("heading2").innerText = "Earthlings";
+        document.getElementById("heading2").innerText =
+          document.getElementById("box2").value;
+      }
+
+      function box3change() {
+        document.getElementById("row").style.backgroundColor = "pink";
+        document.getElementById("heading3").innerText = "LowerRow";
+        document.getElementById("heading3").innerText =
+          document.getElementById("box3").value;
+      }
+    </script>
+  </body>
+</html>

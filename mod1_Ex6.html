@@ -1,0 +1,39 @@
+<!-- Try creating a json object variable for a book. The book should have a title, description, author and number of pages
+• Try printing these object property values in your console individually and via the whole book object
+• Update the description of the book. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>module1-Excercise 6</title>
+  </head>
+  <body>
+    <h1>module1-Exercise 6</h1>
+    <h2>json object for a book</h2>
+    <p id="title"></p>
+    <p id="description"></p>
+    <p id="author"></p>
+    <p id="NumPages"></p>
+    <p id="book"></p>
+
+    <script>
+      let book = {
+        title: "This is a book title",
+        description: "This is the book description",
+        author: "The programmer is the author",
+        NumPages: 79,
+      };
+
+      document.getElementById("title").innerHTML = book.title;
+      document.getElementById("description").innerHTML = book.description;
+      document.getElementById("author").innerHTML = book.author;
+      document.getElementById("NumPages").innerHTML = book.NumPages;
+
+      document.getElementById(
+        "book"
+      ).innerHTML = `${book.title} ${book.description} ${book.author} ${book.NumPages}`;
+    </script>
+  </body>
+</html>

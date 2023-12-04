@@ -1,0 +1,125 @@
+<!--Lab 4 - Build your own website
+In this lab you will be building the entire website from scratch. You will only use very basic HTML boilerplate. Use all the skills that you’ve learned:
+•	Semantic HTML
+•	Sections
+•	Flexbox - layouts, centering elements and spacing elements into opposite corners
+•	Images and setting-border radius
+•	Box-model and setting margin, padding, width and height
+•	Styling text
+•	Styling links
+For example, your resume may look like this:
+Certainly, here's a sample short resume:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+<script>document.getElementById("aside").style.backgroundColor="blue";</script>
+<style>/* Define a class for the main content area */
+    .topnav {
+      justify-content: space-around;
+      display: flex; /* Adjust flex properties as needed */
+      background-color: rgb(255, 255, 255);
+      border: 3px solid rgb(19, 19, 219); /* Simplified border property */
+      padding: 10px;
+      margin: 5px;
+    }
+    
+    /* Define a class for flex containers */
+    .flex-container {
+      display: grid;
+      align-items: flex-start;
+    }
+    
+    /* Define a class for an aside element with colored borders */
+    #aside {
+      height: 1500px;
+      width: 100px;
+      background-color: aqua;
+      border: 3px solid blue; /* Simplified border property */
+    }
+    
+    
+    /* Define a class for the sidebar */
+    .centrePiece {
+      display : flex; /* Adjust flex properties as needed */
+      background-color: rgb(102, 231, 22);
+      border: 3px solid blue; /* Simplified border property */
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+      grid-gap: 20px; /* Gap between grid items */
+    }
+    
+    .grid-item {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<aside id="aside">
+    <h1> John Doe** </h1>
+    <br>
+    Contact Information:**
+    <br>
+    - Address: 123 Main Street, City, State, ZIP Code
+    <br>
+    - Phone: (123) 456-7890
+    <br>
+    - Email: john.doe@email.com
+    <br>
+    - LinkedIn: linkedin.com/in/johndoe
+</aside>
+
+
+  <div class="flex-container">
+
+
+
+  </div>
+
+
+  <div class="centrepiece"> 
+  
+    **Summary:**
+Blah blah 
+  
+  **Education:**
+  - Masters in Lighting Design Engineering and Science
+    The university of Sydney
+    Graduated: May 2013
+  
+  
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item">Item 4</div>
+  <div class="grid-item">Item 5</div>
+  <div class="grid-item">Item 6</div>
+</div>
+
+    
+</body>
+</html>

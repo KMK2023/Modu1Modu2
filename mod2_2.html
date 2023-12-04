@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>replit</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+<style>
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .class {
+    margin: 20px;
+    margin: 10px;
+    margin: 30px;
+  }
+  
+  div p {
+    color: blue;
+  }
+  
+  article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  
+  .style-m1 {
+    color: red;
+  }
+  
+  #style-m2 {
+    color: blue;
+  }
+  
+  .style-m1#style-m2 {
+    color: purple;
+  }
+  
+  div.box {
+    border: 2px solid darkred;
+    padding: 15px;
+    margin: 32px;
+  }
+  
+  p.C1_1 {
+    border: 5px dotted blue;
+    padding: 2px, 5px, 10px, 15px;
+  }
+  
+  p.C2_1 {
+    width: 100rem;
+    height: 50rem;
+    border: 10px dotted green;
+  }
+  
+  p.C2_2 {
+    width: 75vh;
+    height: 60vh;
+    border: 5px dotted yellow;
+  }
+  
+  
+  p.C3_1 {
+    border: 1px dashed blue
+  }
+  
+  p.C3_2 {
+    border: 1px solid green
+  }
+  
+  p.C3_3 {
+    border: 1px double yellow
+  }
+  
+  
+  p.C3_4 {
+    border: 1px groove black
+  }
+  
+  p.C3_5 {
+    border: 1px ridge orange
+  }
+  
+  p.C3_6 {
+    border: 1px inset pink
+  }
+  
+  p.C3_7 {
+    border: 1px outset brown
+  }
+  
+  p.C3_8 {
+    border: 1px none violet
+  }
+  
+  p.C3_9 {
+    border: 1px hidden magenta
+  }
+  
+  p.C4_1 {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid green;
+    box-sizing: border-box;
+  }
+  
+  p.C5_1 {
+    width: 175px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid green;
+    box-sizing: border-box;
+  }
+  
+  
+  p.C5_2 {
+    width: 300px;
+    height: 50px;
+    overflow: visible;
+    border: 1px solid green;
+  }
+  
+  p.C5_3 {
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid green;
+  }
+  
+  p.C5_4 {
+    width: 300px;
+    height: 50px;
+    overflow: scroll;
+    border: 1px solid green;
+  }
+  
+  p.C5_5 {
+    width: 300px;
+    height: 50px;
+    overflow: auto;
+    border: 1px solid green;
+  }
+  
+  .my-children {
+    background-color: red;
+  }
+  
+  .my-descendants {
+    background-color: blue;
+  }
+  
+  .family-my-descendant {
+    background-color: green;
+  }
+  
+  .C6_1 {
+    outline: solid blue 10px;
+    border: 10px solid green;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  
+  
+  .C8_1 {
+    background-image: url('html_lab_image.jpg');
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .C8_2 {
+    background-image: url('html_lab_image.jpg');
+    height: 10px;
+    background-position: left;
+    background-repeat: repeat;
+  
+  }
+
+</style>
+
+
+
+</head>
+<body>
+
+
+
+<a href="index1.html"><button>Goto HTML page 2 </button></a>
+
+  <div>
+    <h2> I. Selectors, combinators and pseudo-classes</h2>
+  </div>
+
+  <h2>1. Selectors</h2>
+  <article> 1.1: Using type selector add margin, padding and border to each on the page- with the following
+    parameters
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black </article>
+  <div>
+    <p class="style-m1"> 1.2 : style-m1: Using class selector change font color of element with class .style-me1 to
+      red
+    </p>
+
+    <p id="style-m2">1.3: Using id selector change font color of element with id #style-me2 to blue</p>
+  </div>
+
+  <p class="style-m1" id="#style-me2">1.4 Using specific selector change font color of the element that has both class
+    of 'style-me1'and id of #style-me2 to purple. </p>
+
+  <h2>2.Combinators<i> To do!</i></h2>
+
+  <p class="my-descendants-are-styled"> 2.1 Using descendant combinator style all the p elements that are descendants of
+    '.my-descendants-are-styled'. Set their background to red.
+  <ul class="my-children">
+    <li> Child1</li>
+    <li> child 2</li>
+    <li> child 3</li>
+    <li> child 4</li>
+    <li> child 5</li>
+    <li>
+      <ol class="my-descendants">
+        <li> Grandchild 1</li>
+        <li> Grandchild 2</li>
+      </ol>
+    </li>
+  </ul>
+
+
+  </p>
+
+
+  <p class="2_2"> Using child combinator style all the p elements that are children of .my-children-are-styled. Set
+    their
+    background to red. </p>
+  <ul class="family-my-children">
+    <li> Child1</li>
+    <li> child 2</li>
+    <li> child 3</li>
+    <li> child 4</li>
+    <li> child 5</li>
+    <li>
+      <ol class="family-my-descendants">
+        <li> Grandchild 1</li>
+        <li> Grandchild 2</li>
+      </ol>
+    </li>
+  </ul>
+
+  <h2>II. Box model and common properties</h2>
+
+  <div class="box">
+    1. Set margin and padding on an element with class .box
+
+    <p class="C1_1">
+      1.1 Try with different margin and padding syntaxes - 4-value syntax, 2-value syntax and 1-value syntax. Use
+      pixels
+      as units for margin and padding but do not hesitate to try out other types of units.
+    </p>
+    <p class="C2_1">
+      2. width and height
+      <br>
+      2_1 Set width and height using different dimension units: px, rem, vh. vw
+    </p>
+    <p class="C2_2"> Observe how the third box retains height styled via style attribute. Usually vh units are
+      associated with height and vw with width.
+      2_3 Try resizing the browser window while the height depends on the vw and vh units. What can you observe?
+      <br>
+
+      Answer: Observed that the size is altering based on the size of the browser window
+    </p>
+  </div>
+  <h2>3. border</h2>
+  <div>
+    <p> Set border on the element, try different border styles and colors
+      Make the border 10px thick and observe how thickness of the border moves elements in each direction.</p>
+    <p class="C3_1"> Dashed </p>
+    <p class="C3_2"> Solid </p>
+    <p class="C3_3"> Double</p>
+    <p class="C3_4"> groove</p>
+    <p class="C3_5"> ride</p>
+    <p class="C3_6"> inset</p>
+    <p class="C3_7"> outset</p>
+    <p class="C3_8"> none</p>
+    <p class="C3_9"> hidden</p>
+
+  </div>
+
+  <h2>4. box-sizing</h2>
+  <p class="C4_1"> Test different values of box-sizing. How is box-sizing affecting width and height of the element?</p>
+
+
+  <h2>5. text-overflow</h2>
+  <p class="C5_1"> 5.1 Make text overflow outside of the element by setting width and height to smaller values so the
+    text in a
+    second
+    box goes over the box borders.
+    <br>
+    5.2 Set overflow CSS rule for .box class - test different values of overflow. What does they affect
+    the box? (Overflow, hidden, scroll, auto)
+  </p>
+  <p class="C5_2">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow
+    Overflow Overflow Overflow Overflow Ove </p>
+  <p class="C5_3">hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden hidden
+    hidden hidden hidden hidden hidden hidden hidden hidden </p>
+  <p class="C5_4">scroll scroll scroll scroll scroll scroll scroll scroll scroll scroll scroll scroll scroll scroll
+    scroll scroll scroll scroll scroll scroll scroll scroll </p>
+  <p class="C5_5">auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto
+    auto auto auto auto auto auto auto auto auto auto auto auto auto </p>
+
+  <hr>
+  </p>
+  <h2> 6. outline</h2>
+  <p class="C6_1">6.1 Set a wide outline (10px) on the .box. Observe that setting the outline does not move elements
+    around like
+    with
+    borders.</p>
+  <hr>
+
+  <h2>7. Border-radius</h2>
+  <p clas="C7_1">7.1 Set border-radius on the .box element. Start by trying out different values express in pixels e.g.
+    20px</p>
+  <p class="C7_2"> 7.2 Setting border-radius to 50% together with width=height will make the element look like a circle.
+    If the
+    width
+    is different from height then the element will become an ellipsis. Not that this is just a visual effect of the
+    border and when you inspect the HTML element is still an rectangle.</p>
+  <hr>
+  8. background image
+  <p class="C8_1">8.1 Set background image using background property. Image to use is located in
+    ./assets/images/img1.png file
+  </p>
+  <p class="C8_2"> 8.2 Set background-size to `contain`. Do not hesitate to try other values.8.3 Set background-repeat
+    to `no-repeat`. Do not hesitate to try other values.8.4 Set background-position `to center`. Do not hesitate to try
+    other values.</p>
+
+
+    <p>
+
+      <h2>III. Positioning</h2>
+      In this classes you will be editing
+      1. Absolute
+      1.1 Set absolute position on .position-absolute class
+      2. relative and absolute
+      2.1 Set relative position on .position-relative class
+      2.2 Try different values for left, right, top, bottom on .absolute class. Start by not setting left and right or top
+      and bottom at the same time, e.g. set top and left. What can you observe?
+      2.3 How is absolute within relative different from absolute that is outside of relative?
+      2.4 Set high z-index value on .position-absolute class. How does it affect the element?
+    
+      TIP: You can use ctrl+f (cmd+f on MacOs) to search for specific content on the page.
+    
+      <h2> 3. sticky</h2>
+      <p> 1.1 Set sticky position on .position-sticky class and scroll the page to see it work.
+        1.2 Note that we placed an HTML element with .position-sticky class outside of the article. This is because sticky
+        positioned elements can be affected only by scrolling on their direct parents. </p>
+    
+      <h2>IV. Styling text</h2>
+      <p>In this section we will focus on styling text. Search for the answers on the Internet.
+        1. Color - set font color using `color` CSS rule on .text-style class
+        2. Font-size - set font-size CSS rule on .text-style class
+        3. Line-height - set line-height CSS rule on .text-style class
+        4. font-weight - set font-weight CSS rule on .text-style class
+        4.1 Try both, keyword and number values, e.g. `bold` and `800`
+        5. Importing fonts and font-family
+        5.1 Visit https://fonts.google.com/
+        5.2 find fonts that you like
+        5.3 Click select style on various flavours of the same font. Selecting font styles is used to save the bandwidth for
+        the user, if we do not intend to use certain styles of the font then we should not select them.
+    
+        Select the styles. Especially consider the font-weight you set before. `Regular 400` on the list corresponds to the
+        font used when no font-weight is used at all.
+    
+        Copy font-family CSS rule into your .style-text class. sans-serif part of that rule activates in the situation where
+        the previous font could not be loaded, e.g. we misspelled ‘Roboto’ or there is no internet connection. In that case,
+        the browser will load the default sans-serif font.
+    
+        TIP: Have a look at difference between serif and sans-serif fonts
+        TIP: font-family Roboto can be inferred looking at ?family=Roboto part of @import declaration
+    
+        6. text-align - set text-align CSS rule on .text-style class
+        7. letter-spacing - set letter-spacing CSS rule on .text-style class
+        8. word-spacing - set word-spacing CSS rule on .text-style class
+        9. text-transform - set text-transform CSS rule on .text-style class
+        10. text-decoration - set text-decoration CSS rule on .text-style class
+    
+      </p>
+
+      <h2>V. Styling links </h2>
+
+  <p>In this section we will be styling links in different states:
+    • a, a:link - link in its untouched form
+    • a:visited - link that has been visited
+    • a:hover - link that is hovered with a cursor
+    • a:active - link that has been “hovered” using keyboard
+    • a:focus - link that has been clicked but the cursor is still not released or the browser is navigating to another
+    webpage
+    Note that links come with a lot of styling from the browser. It is common to reset all those styles before
+    developing
+    CSS to simplify the styling process.
+    1. a, a:link, a:visited
+    1.1 Style link in its basic form, set font color (using `color` CSS property)
+    1.2 Consider using color, font-size, font-weight, font-decoration and border for your styles and feel free to use
+    any
+    other styles.
+    2. a:hover, :active, a:focus
+    3. Many websites do not apply special styling to a:visited links. Extract a:visited link and apply a style using CSS
+    for it.
+    2.1. If you do not create style for a:visited the styles will leak from `a` and `a:link` CSS rules</p>
+
+  <h2>VI. calc() </h2>
+  <p>In this section we will perform simple calculations using calc.
+    1. Try setting `width: 100vw;` on .calc-style class. The element should overflow outside of the screen.
+    1.1 Set `width: calc(100vw - 100px);` on .calc-style class. Now the element occupies 100px less than the entire
+    width
+    of the screen.
+    1.3 While in this example we could just use `width: 100%`, Sometimes you will stumble upon scenarios where the
+    `width:
+    100%` solution does not work due to other CSS properties. calc() is not commonly used and should be avoided. At the
+    same time a lot of CSS frameworks use calc() internally so when we are using CSS frameworks we usually do not need
+    to
+    use calc().</p>
+
+
+</body>
+
+
+    </html>

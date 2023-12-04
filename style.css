@@ -1,0 +1,38 @@
+
+
+.page-heading {
+    background-color: coral;
+    padding: 50px;
+    font-size: 30px;
+}
+
+
+ol.choices 
+{list-style-type: none;}
+
+
+.container
+{background-color: rgb(209, 233, 233);
+    display:inline-flex;
+}
+
+.card-set
+{padding: 20px;}
+
+.foot
+{
+    position: -webkit-sticky;    
+    position: sticky;
+        bottom: 0;
+        background-color: yellow;
+        padding: 5px;
+        font-size: 20px;
+      }
+
+
+.container-fluid>row
+{
+    display:inline-flex;
+    padding: 500px;
+
+}

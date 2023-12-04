@@ -1,0 +1,71 @@
+<!-- Use the learnings from this lesson to design some very simple functions. Call them with different values.
+1. Create 4 functions for the 4 main mathematical operations (-,+,/,*). Return the calculated value and then output it to the screen.
+2. Create a function that takes the name of a person as an argument, and prints out “Hello <name>” to the console. Hint: search online on how to concatenate two strings. 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Module 1- Exercise 4- Calculator and Excercise 7</h1>
+    <p id="addresult"></p>
+    <p id="subresult"></p>
+    <p id="mulresult"></p>
+    <p id="divresult"></p>
+
+    <script>
+      function add(a, b) {
+        return a + b;
+      }
+      function sub(a, b) {
+        return a - b;
+      }
+      function mul(a, b) {
+        return a * b;
+      }
+      function div(a, b) {
+        return a / b;
+      }
+
+      let a = 9;
+      let b = 3;
+
+      document.getElementById(
+        "addresult"
+      ).innerText = `Addition of ${a} + ${b} is ${add(a, b)}`;
+      document.getElementById(
+        "subresult"
+      ).innerText = `Subtraction of ${a} - ${b} is ${sub(a, b)}`;
+      document.getElementById(
+        "mulresult"
+      ).innerText = `Multiplication of ${a} * ${b} is ${mul(a, b)}`;
+      document.getElementById(
+        "divresult"
+      ).innerText = `Division of ${a} / ${b} is ${div(a, b)}`;
+
+      if (add(a, b) != 5) {
+        document.getElementById("addresult").style.backgroundColor = "red";
+      }
+      if (sub(a, b) != 2) {
+        document.getElementById("subresult").style.backgroundColor = "red";
+        document.getElementById(
+          "subresult"
+        ).innerHTML = `i am throwing a test error now for Subtraction of ${a} - ${b} is ${sub(
+          a,
+          b
+        )}`;
+      }
+      if (mul(a, b) != 27) {
+        document.getElementById("mulresult").style.backgroundColor = "red";
+      }
+      if (div(a, b) != 3) {
+        document.getElementById("divresult").style.backgroundColor = "red";
+      }
+    </script>
+  </body>
+</html>

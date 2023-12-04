@@ -1,0 +1,64 @@
+<!-- For understanding more about arrays, try creating an array that has 5 elements.
+• Replace the value of the element at position 1 and 4.
+• Add a new element to the beginning of the array
+• Remove the element at the end of the array
+• Print the array to the console. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1 Excercise 5</title>
+
+    <style>
+      #array1,
+      #array2,
+      #array3,
+      #array4,
+      #array5 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Create a new array</p>
+    <p id="array1"></p>
+    <p>Replace the value of the element at position 1 and 4</p>
+    <p id="array2"></p>
+    <p>Add a new element to the beginning of the array</p>
+    <p id="array3"></p>
+    <p>Remove the element at the end of the array</p>
+    <p id="array4"></p>
+
+    <script>
+      let fruits = ["apple", "mango", "banana", "Grapes", "Pomogranate"];
+
+      document.getElementById(
+        "array1"
+      ).innerText = `the array created is : ${fruits}`;
+
+      console.log(fruits);
+
+      fruits[1] = "replacedOrange";
+      fruits[4] = "replacedPineapple";
+      console.log(fruits);
+
+      document.getElementById(
+        "array2"
+      ).innerText = `the array created is : ${fruits}`;
+
+      fruits.unshift("replacedGuava");
+      document.getElementById(
+        "array3"
+      ).innerText = `the array created is : ${fruits}`;
+
+      fruits.pop();
+      document.getElementById(
+        "array4"
+      ).innerText = `the array created is : ${fruits}`;
+
+      console.log(fruits);
+    </script>
+  </body>
+</html>

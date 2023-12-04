@@ -1,0 +1,132 @@
+<!-- • Define on paper, all the user stories (functionalities) you will need for this page.
+• Make a simple storyboard of the user using the system.
+• Create a git repository for the project
+• Clone the project locally
+• Work on the project creating 2 branches, one for the UI, and one for rolling the dice, committing and merging when completed.
+• Create the roll functionality by passing an argument, in order to reutilise the same function multiple times
+• Write unit tests for the roll dice functionality.
+• When complete, push the content to your git repository. -->
+
+<!DOCTYPE html>
+<!-- index.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devsInc Dice Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        margin: 0;
+        background: navy;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 1.5;
+      }
+      label,
+      input {
+        font-size: 20px;
+        padding: 0.5em;
+      }
+      #dice-chooser {
+        margin: 2em;
+      }
+      #numSides {
+        width: 2em;
+        border-radius: 10px;
+      }
+      button {
+        background: goldenrod;
+        color: black;
+        font-size: 20px;
+        padding: 1em 2em;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Excercixe 8 - devsInc Dice Roller</h1>
+    <p>
+      This is the Dice Roller. You can choose the number of sides in the tab
+      below and generate a randome number on the dice.
+    </p>
+    <div id="dice-chooser">
+      <label
+        >Number of Players
+        <input
+          type="number"
+          id="Player"
+          name="Player"
+          value="3"
+          min="1"
+          max="3"
+      /></label>
+
+      <label
+        >How many dice sides?
+        <input
+          type="number"
+          id="numSides"
+          name="numSides"
+          value="6"
+          min="6"
+          max="20"
+      /></label>
+    </div>
+
+    <div id="dice-result1">
+      <p>Player 1:</p>
+      <button onclick="rollDice1()">Roll Dice 1!</button>
+    </div>
+    <div id="dice-result2">
+      <p>Player 2:</p>
+      <button onclick="rollDice2()">Roll Dice 2!</button>
+    </div>
+    <div id="dice-result3">
+      <p>Player 3:</p>
+      <button onclick="rollDice3()">Roll Dice 3!</button>
+    </div>
+
+    <script>
+      function rollDice1() {
+        let sides = document.getElementById("numSides").value;
+        let result = getDiceResult1(sides);
+        document.getElementById("dice-result1").innerText =
+          "You rolled a " + result;
+      }
+      function rollDice2() {
+        let sides = document.getElementById("numSides").value;
+        let result = getDiceResult2(sides);
+        document.getElementById("dice-result2").innerText =
+          "You rolled a " + result;
+      }
+      function rollDice3() {
+        let sides = document.getElementById("numSides").value;
+        let result = getDiceResult3(sides);
+        document.getElementById("dice-result3").innerText =
+          "You rolled a " + result;
+      }
+      // Returns a random number between 1 and the given argument
+      function getDiceResult1(max) {
+        let result = Math.ceil(Math.random() * max);
+        return result;
+      }
+      function getDiceResult2(max) {
+        let result = Math.ceil(Math.random() * max);
+        return result;
+      }
+      function getDiceResult3(max) {
+        let result = Math.ceil(Math.random() * max);
+        return result;
+      }
+      // Unit tests - testing dice sides from 1 to 100
+      for (let i = 1; i < 100; i++) {
+        let testResult = getDiceResult(i);
+        if (testResult > i || testResult < 1)
+          throw Error("Invalid dice result " + testResult + " for max " + i);
+      }
+    </script>
+  </body>
+</html>
